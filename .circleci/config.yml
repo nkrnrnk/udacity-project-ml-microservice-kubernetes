@@ -5,7 +5,8 @@
 version: 2
 jobs:
   build:
-    docker:# Use the same Docker base as the project
+    docker:
+      # Use the same Docker base as the project
       - image: python:3.7.3-stretch
 
     working_directory: ~/repo
@@ -32,7 +33,7 @@ jobs:
       - save_cache:
         paths:
           - ./venv
-            key: v1-dependencies-{{ checksum "requirements.txt" }}
+        key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       # run lint!
       - run:
