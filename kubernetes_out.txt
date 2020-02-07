@@ -5,3 +5,10 @@ api-65f4bd586-pgjlt   1/1     Running   0          6m23s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
